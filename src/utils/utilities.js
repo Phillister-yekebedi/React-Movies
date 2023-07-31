@@ -52,7 +52,7 @@ export const getCategories =async() =>{
               {
                 method: 'GET',
                 headers: {
-                  Authorization: `Bearer ${ACCESS_TOKEN}`
+                  Authorization:`Bearer ${ACCESS_TOKEN}`
                 }
               }
             );
@@ -67,7 +67,7 @@ export const getCategories =async() =>{
               const response = await fetch(`${BASE_URL}/3/movie/${movieId}`, {
                 method: 'GET',
                 headers: {
-                  Authorization:        `Bearer ${ACCESS_TOKEN}`,
+                  Authorization:`Bearer ${ACCESS_TOKEN}`,
                 },
               });
               const result = await response.json();

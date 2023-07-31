@@ -13,8 +13,8 @@ function App() {
         <Navbar />
        
         <Routes>
+        <Route path='/movies/:movieId' element={<MovieDetails />} />
           <Route path='/' element={<GetMovies />} />
-          <Route path='/movies/:movieId' element={<MovieDetails />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -15,24 +15,23 @@ const Navbar = () => {
     <div className="Navbar">
       <nav className="nav">
         <div>
-          <h1 className="logo">
-            M<span>oo</span>vie
-          </h1>
+          <h1 className="name">MOVIES</h1>
         </div>
         <div className="search">
           <input
             value={searchValue}
             onChange={handleInput}
             type="text"
-            placeholder="Search"
+            placeholder="Search Movie"
           />
           <button onClick={handleSearch}>Search</button>
         </div>
         <div className="links">
           <li>Home</li>
           <li>About</li>
-          <li>My list</li>
-          <button>Sign in</button>
+          <li>Movies List</li>
+          <button>SignIn</button>
+          <button>LogIn</button>
         </div>
       </nav>
       {searchResults.length > 0 && (
