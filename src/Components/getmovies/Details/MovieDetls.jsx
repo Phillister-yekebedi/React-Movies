@@ -16,7 +16,7 @@ const MovieDetails = () => {
     return <div>Loading...</div>;
   }
   if (!movie.poster_path || !movie.title || !movie.overview || !movie.release_date) {
-    return <div>Missing movie details</div>;
+    return <div>Movie details Unavailable</div>;
   }
   return (
     <div className="movie-details">

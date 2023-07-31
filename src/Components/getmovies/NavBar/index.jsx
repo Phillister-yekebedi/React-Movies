@@ -43,7 +43,8 @@ const Navbar = () => {
                 alt={movie.title}
               />
               <h3>{movie.title}</h3>
-              <p>{movie.overview}</p>
+              <h3>{movie.date}</h3>
+
             </div>
           ))}
         </div>
